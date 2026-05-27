@@ -12,14 +12,6 @@
         @variant md {
             padding-inline: 20px;
         }
-
-        @variant xl {
-            padding-inline: 30px;
-        }
-
-        @variant 2xl {
-            padding-inline: 40px;
-        }
     }
 }
 
