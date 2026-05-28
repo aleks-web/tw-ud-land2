@@ -12,21 +12,27 @@
         @variant md {
             padding-inline: 20px;
         }
-
-        @variant xl {
-            padding-inline: 30px;
-        }
-
-        @variant 2xl {
-            padding-inline: 40px;
-        }
     }
+}
+
+@theme {
+    --color-grey: #A1A1AA;
+    --color-color: #6343D8; 
+    --color-color-2: #7C3AED;
+    --color-color-3: #C5A8F8;   
+    --color-color-4: #F87171;
+    --color-color-5: #5448AB;
+    --color-color-6: #11132A;
+    --color-color-7: #110F24;
+
+    --radius-min: 8px;
 }
 
 @config './../tailwind.config.mjs';
 
 :root {
     --main-color: #6343D8;
+    
 }
 
 body {
@@ -34,4 +40,6 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: HeptaSlab, sans-serif;
+    background-color: #0A0B14;
+    color: #fff;
 }
