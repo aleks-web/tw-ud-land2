@@ -141,9 +141,6 @@ class Quiz {
 
         const userLoggedInEvent = new CustomEvent('quiz:step_' + stepNum, { detail: { options, step } });
         document.dispatchEvent(userLoggedInEvent);
-
-        // Костыль
-        document.querySelector('#qz-cont').classList.add('step-' + stepNum);
     }
 
     updateProgressBar() {
@@ -164,6 +161,8 @@ class Quiz {
                 continue;
             }
         });
+
+        document.querySelector('.qz__percent span').innerText = percent + '%';
     }
 
     updateQuestion() {
@@ -338,20 +337,19 @@ class Quiz {
 }
 
 document.addEventListener('qStep:5', (e) => {
-    const text = document.querySelector('.qz-num-text');
-    text.innerText = 'Готово';
-
-    document.querySelector('.top-control').classList.add('hidden');
-    document.querySelector('#qz-descr').classList.add('hidden');
+    const text = document.querySelector('.qz__step-info');
+    text.innerHTML = '<div class="text-[#6343D8] text-[18px] md:text-[20px] 2xl:text-[24px]">Готово</div>';
 });
 
-if (document.querySelector('.qz-step')) {
+if (document.querySelector('.qz__step')) {
     window.quiz = new Quiz()
-        .setStepElsBySelector('.qz-step')
-        .setStepNumElsSelector('.qz-num')
+        .setStepElsBySelector('.qz__step')
+        .setStepNumElsSelector('.qz__nm')
         .setBtnNextElsBySelector('.qz-next')
         .setBtnPrevElsSelector('.qz-prev')
-        .setProgressBarElsBySelector('.qz-progress')
-        .setQuestionElsBySelector('.qz-question')
+        .setProgressBarElsBySelector('.progress')
+        .setQuestionElsBySelector('.qz-wrap__title')
         .endSetSelectors();
+
+        // window.quiz.setStep(5);
 }

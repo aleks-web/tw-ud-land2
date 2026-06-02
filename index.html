@@ -6,10 +6,6 @@
         <link rel="icon" type="image/svg+xml" href="/favicon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Тест</title>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide-core.min.css" />
-
     </head>
 
   <body class="group/body flex flex-col pt-2 before:transition-colors">
@@ -39,7 +35,7 @@
             </div>
           </div>
 
-          <button class="text-xs border border-[#FFFFFF99] rounded-[12px] py-2 px-6 xl:px-10">ПЕРЕЗВОНИТЕ МНЕ</button>
+          <button class="text-xs border border-[#FFFFFF99] rounded-[12px] py-2 px-6 xl:px-10" data-modal="modal-call">ПЕРЕЗВОНИТЕ МНЕ</button>
         </div>
       </div>
       <div class="w-full h-px bg-white opacity-10"></div>
@@ -171,7 +167,7 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M2.99688 5.39922V4.19922C2.99688 2.54347 4.34113 1.19922 5.99688 1.19922C7.65262 1.19922 8.99688 2.54347 8.99688 4.19922V5.39922C9.65962 5.39922 10.1969 5.93648 10.1969 6.59922V9.59922C10.1969 10.262 9.65962 10.7992 8.99688 10.7992H2.99688C2.33413 10.7992 1.79688 10.262 1.79688 9.59922V6.59922C1.79688 5.93648 2.33413 5.39922 2.99688 5.39922ZM7.79688 4.19922V5.39922H4.19688V4.19922C4.19688 3.20577 5.00343 2.39922 5.99688 2.39922C6.99032 2.39922 7.79688 3.20577 7.79688 4.19922Z" fill="#A1A1AA"/>
               </svg>
 
-              <div class="text-grey text-[10px]">Консультация ни к чему не обязывает</div>
+              <div class="text-grey text-[12px] 2xl:text-[14px]">Консультация ни к чему не обязывает</div>
             </div>
           </div>
         </div>
@@ -207,17 +203,17 @@
     </div>
 
     <div class="container my-2 xl:m-6">
-      <div class="bg-color-7 py-2 xl:p-6">
+      <div class="bg-color-7 p-2 rounded-[10px] xl:p-6">
         <div class="flex flex-col items-center gap-6 pb-4 2xl:flex-row">
-          <div class="flex gap-6 2xl:w-1/2 2xl:h-[340px]">
-            <div class="w-3/7 h-[200px] overflow-hidden rounded-[12px] border border-[#FFFFFF1A] 2xl:w-1/2">
-              <img src="src/images/man.png" alt="Врач" class="w-full h-full object-cover object-center">
+          <div class="flex gap-4 2xl:w-1/2 2xl:h-[340px]">
+            <div class="w-3/7 h-[200px] overflow-hidden rounded-[12px] border border-[#FFFFFF1A] lg:h-[300px] 2xl:w-1/2">
+              <img src="src/images/man.png" alt="Врач" class="w-full mt-2 h-full object-cover object-center">
             </div>
             <div class="w-4/7 flex flex-col gap-3 rounded-[12px] border border-[#FFFFFF1A] p-4 xl:w-1/2">
               <div class="text-grey text-xs">ВОЗМОЖНО, ВЫ СЕЙЧАС ДУМАЕТЕ</div>
-              <div class="text">Выглядит заманчиво, но насколько это правда?</div>
-              <div class="text-grey text-xs">Обещания красивой улыбки звучат привлекательно, но за ними могут скрываться сложности, догадки и разочарования.</div>
-              <div class="text-grey text-xs">Мы работаем иначе: честно, открыто и с фокусом на реальный результат.</div>
+              <div class="text lg:text-[18px]">Выглядит заманчиво, но насколько это правда?</div>
+              <div class="text-grey text-xs lg:text-[14px]">Обещания красивой улыбки звучат привлекательно, но за ними могут скрываться сложности, догадки и разочарования.</div>
+              <div class="text-grey text-xs lg:text-[14px]">Мы работаем иначе: честно, открыто и с фокусом на реальный результат.</div>
             </div>
           </div>
 
@@ -316,13 +312,13 @@
     </div>
 
     <div class="container my-2 xl:m-6">
-      <div class="flex flex-col gap-6 xl:flex-row">
-        <div class="flex flex-col gap-6 xl:max-w-[515px]">
+      <div class="flex flex-col gap-6 2xl:flex-row">
+        <div class="flex flex-col gap-6 2xl:w-1/2">
           <div class=" font-bold text-[26px] lg:text-[28px] xl:text-[30px] 2xl:text-[36px]">Узнайте, <span class="text-color-3">какой протокол имплантации подойдёт именно вам</span></div>
         
           <div class="text-grey">Ответьте на 4 простых вопроса — и получите персональные рекомендации от наших специалистов</div>
 
-          <div class="hidden gap-4 xl:grid xl:grid-cols-2 ">
+          <div class="hidden gap-4 xl:grid xl:grid-cols-2">
             <div class="flex gap-2">
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="min-w-[40px]">
                 <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#6343D8" stroke-opacity="0.5"/>
@@ -373,8 +369,7 @@
             </div>
           </div>
 
-
-          <div class="splide xl:hidden">
+          <div class="splide xl:hidden" id="sp">
             <div class="splide__track">
               <div class="splide__list">
                 <div class="flex gap-2 splide__slide">
@@ -425,79 +420,276 @@
           </div>
         </div>
 
-        <div>class</div>
+        <div class="mt-4 w-1/2">
+
+
+          <div class="qz mb-10 mt-10">
+            <div class="qz-wrap">
+
+              <div class="flex flex-col gap-2">
+                <div class="flex items-center justify-between text-[#A1A1AA]">
+                  <div class="qz__step-info flex flex-row gap-2">
+                    Шаг <div class="qz__nm">1</div>из 4
+                  </div>
+                  <div class="qz__percent"><span>25%</span></div>
+                </div>
+
+                <div class="progress" style="--progress-width: 20%"></div>
+              </div>
+
+              <div class="qz-wrap__title text-[18px]">Сколько будет стоить конкретно ваш случай?</div>
+
+              <div class="mt-4">
+                <div class="flex flex-col gap-4 qz__step hidden [.active]:flex active" data-step-options='{"step_id": "1", "type": "radio", "question": "Сколько будет стоить конкретно ваш случай?"}'>
+                  
+                  <div class="group [.active]:border-[#6343D8] flex items-center gap-2 p-4 border border-[#3B3C43] border-[1px] rounded-[12px]" data-value="Верхнюю">
+                    <div class="group-[.active]:border-[#6343D8] group-[.active]:bg-[#6343D8] flex items-center justify-center w-[20px] h-[20px] min-w-[20px] border border-[#3B3C43] rounded-full">
+                      <div class="group-[.active]:flex hidden w-[8px] h-[8px] bg-white rounded-full"></div>
+                    </div>
+                    <div>Верхнюю</div>
+                  </div>
+
+                  <div class="group [.active]:border-[#6343D8] flex items-center gap-2 p-4 border border-[#3B3C43] border-[1px] rounded-[12px]" data-value="Верхнюю">
+                    <div class="group-[.active]:border-[#6343D8] group-[.active]:bg-[#6343D8] flex items-center justify-center w-[20px] h-[20px] min-w-[20px] border border-[#3B3C43] rounded-full">
+                      <div class="group-[.active]:flex hidden w-[8px] h-[8px] bg-white rounded-full"></div>
+                    </div>
+                    <div>Нижню</div>
+                  </div>
+
+                  <div class="group [.active]:border-[#6343D8] flex items-center gap-2 p-4 border border-[#3B3C43] border-[1px] rounded-[12px]" data-value="Верхнюю">
+                    <div class="group-[.active]:border-[#6343D8] group-[.active]:bg-[#6343D8] flex items-center justify-center w-[20px] h-[20px] min-w-[20px] border border-[#3B3C43] rounded-full">
+                      <div class="group-[.active]:flex hidden w-[8px] h-[8px] bg-white rounded-full"></div>
+                    </div>
+                    <div>Обе челюсти</div>
+                  </div>
+
+                  <div class="group [.active]:border-[#6343D8] flex items-center gap-2 p-4 border border-[#3B3C43] border-[1px] rounded-[12px]" data-value="Верхнюю">
+                    <div class="group-[.active]:border-[#6343D8] group-[.active]:bg-[#6343D8] flex items-center justify-center w-[20px] h-[20px] min-w-[20px] border border-[#3B3C43] rounded-full">
+                      <div class="group-[.active]:flex hidden w-[8px] h-[8px] bg-white rounded-full"></div>
+                    </div>
+                    <div>Затрудняюсь ответить</div>
+                  </div>
+
+                </div>
+
+                <div class="flex flex-col gap-4 qz__step hidden [.active]:flex" data-step-options='{"step_id": "2", "type": "radio", "question": "Зубов нет или их нужно удалить?"}'>
+                  
+                  <div class="group [.active]:border-[#6343D8] flex items-center gap-2 p-4 border border-[#3B3C43] border-[1px] rounded-[12px]" data-value="Верхнюю">
+                    <div class="group-[.active]:border-[#6343D8] group-[.active]:bg-[#6343D8] flex items-center justify-center w-[20px] h-[20px] min-w-[20px] border border-[#3B3C43] rounded-full">
+                      <div class="group-[.active]:flex hidden w-[8px] h-[8px] bg-white rounded-full"></div>
+                    </div>
+                    <div>Зубов нет</div>
+                  </div>
+
+                  <div class="group [.active]:border-[#6343D8] flex items-center gap-2 p-4 border border-[#3B3C43] border-[1px] rounded-[12px]" data-value="Верхнюю">
+                    <div class="group-[.active]:border-[#6343D8] group-[.active]:bg-[#6343D8] flex items-center justify-center w-[20px] h-[20px] min-w-[20px] border border-[#3B3C43] rounded-full">
+                      <div class="group-[.active]:flex hidden w-[8px] h-[8px] bg-white rounded-full"></div>
+                    </div>
+                    <div>Нужно удалить</div>
+                  </div>
+
+                  <div class="group [.active]:border-[#6343D8] flex items-center gap-2 p-4 border border-[#3B3C43] border-[1px] rounded-[12px]" data-value="Верхнюю">
+                    <div class="group-[.active]:border-[#6343D8] group-[.active]:bg-[#6343D8] flex items-center justify-center w-[20px] h-[20px] min-w-[20px] border border-[#3B3C43] rounded-full">
+                      <div class="group-[.active]:flex hidden w-[8px] h-[8px] bg-white rounded-full"></div>
+                    </div>
+                    <div>Затрудняюсь ответить</div>
+                  </div>
+
+                </div>
+
+                <div class="flex flex-col gap-4 qz__step hidden [.active]:flex" data-step-options='{"step_id": "3", "type": "radio", "question": "Как скоро планируете начать лечение?"}'>
+                  
+                  <div class="group [.active]:border-[#6343D8] flex items-center gap-2 p-4 border border-[#3B3C43] border-[1px] rounded-[12px]" data-value="Верхнюю">
+                    <div class="group-[.active]:border-[#6343D8] group-[.active]:bg-[#6343D8] flex items-center justify-center w-[20px] h-[20px] min-w-[20px] border border-[#3B3C43] rounded-full">
+                      <div class="group-[.active]:flex hidden w-[8px] h-[8px] bg-white rounded-full"></div>
+                    </div>
+                    <div>В ближайшее время</div>
+                  </div>
+
+                  <div class="group [.active]:border-[#6343D8] flex items-center gap-2 p-4 border border-[#3B3C43] border-[1px] rounded-[12px]" data-value="Верхнюю">
+                    <div class="group-[.active]:border-[#6343D8] group-[.active]:bg-[#6343D8] flex items-center justify-center w-[20px] h-[20px] min-w-[20px] border border-[#3B3C43] rounded-full">
+                      <div class="group-[.active]:flex hidden w-[8px] h-[8px] bg-white rounded-full"></div>
+                    </div>
+                    <div>В течение месяца</div>
+                  </div>
+
+                  <div class="group [.active]:border-[#6343D8] flex items-center gap-2 p-4 border border-[#3B3C43] border-[1px] rounded-[12px]" data-value="Верхнюю">
+                    <div class="group-[.active]:border-[#6343D8] group-[.active]:bg-[#6343D8] flex items-center justify-center w-[20px] h-[20px] min-w-[20px] border border-[#3B3C43] rounded-full">
+                      <div class="group-[.active]:flex hidden w-[8px] h-[8px] bg-white rounded-full"></div>
+                    </div>
+                    <div>В течение полугода</div>
+                  </div>
+
+                  <div class="group [.active]:border-[#6343D8] flex items-center gap-2 p-4 border border-[#3B3C43] border-[1px] rounded-[12px]" data-value="Верхнюю">
+                    <div class="group-[.active]:border-[#6343D8] group-[.active]:bg-[#6343D8] flex items-center justify-center w-[20px] h-[20px] min-w-[20px] border border-[#3B3C43] rounded-full">
+                      <div class="group-[.active]:flex hidden w-[8px] h-[8px] bg-white rounded-full"></div>
+                    </div>
+                    <div>Затрудняюсь ответить</div>
+                  </div>
+
+                </div>
+
+                <div class="flex flex-col gap-4 qz__step hidden [.active]:flex" data-step-options='{"step_id": "4", "type": "radio", "question": "Куда вам отправить расчёт стоимости"}'>
+                  
+                  <div class="group [.active]:border-[#6343D8] flex items-center gap-2 p-4 border border-[#3B3C43] border-[1px] rounded-[12px]" data-value="Верхнюю">
+                    <div class="group-[.active]:border-[#6343D8] group-[.active]:bg-[#6343D8] flex items-center justify-center w-[20px] h-[20px] min-w-[20px] border border-[#3B3C43] rounded-full">
+                      <div class="group-[.active]:flex hidden w-[8px] h-[8px] bg-white rounded-full"></div>
+                    </div>
+                    <div>Telegram</div>
+                  </div>
+
+                  <div class="group [.active]:border-[#6343D8] flex items-center gap-2 p-4 border border-[#3B3C43] border-[1px] rounded-[12px]" data-value="Верхнюю">
+                    <div class="group-[.active]:border-[#6343D8] group-[.active]:bg-[#6343D8] flex items-center justify-center w-[20px] h-[20px] min-w-[20px] border border-[#3B3C43] rounded-full">
+                      <div class="group-[.active]:flex hidden w-[8px] h-[8px] bg-white rounded-full"></div>
+                    </div>
+                    <div>Max</div>
+                  </div>
+
+                  <div class="group [.active]:border-[#6343D8] flex items-center gap-2 p-4 border border-[#3B3C43] border-[1px] rounded-[12px]" data-value="Верхнюю">
+                    <div class="group-[.active]:border-[#6343D8] group-[.active]:bg-[#6343D8] flex items-center justify-center w-[20px] h-[20px] min-w-[20px] border border-[#3B3C43] rounded-full">
+                      <div class="group-[.active]:flex hidden w-[8px] h-[8px] bg-white rounded-full"></div>
+                    </div>
+                    <div>По телефону</div>
+                  </div>
+
+                </div>
+
+                <div class="flex flex-col gap-4 qz__step hidden [.active]:flex" data-step-options='{"step_id": "5", "type": "radio", "question": "Оставьте номер телефона", "hide_elements": [".qz-wrap__title"] }'>
+                  
+                  <h2 class="text-[22px] mt-[10px]">Оставьте номер телефона</h2>
+                  <div class="text-[18px]">
+                    Мы свяжемся с Вами в течение 10 минут, рассчитаем стоимость и закрепим подарки:
+                  </div>
+
+                  <form action="#" class="flex flex-col gap-4 mt-8">
+                    <input type="text" name="phone" class="p-3 py-3 outline-none border border-[#9f9da6] w-full rounded-[12px]" data-mask-phone>
+                    <button class="flex items-center justify-center p-4 rounded-[12px] bg-[#6343D8] gap-2 cursor-pointer w-full hover:bg-[#7C3AED] transition">
+                      <span>Отправить</span>                      
+                      <svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.5026 0.833984L15.8359 4.16732M15.8359 4.16732L12.5026 7.50065M15.8359 4.16732H0.835938" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </form>
+
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+
+        </div>
       </div>
     </div>
-
-    <script>
-      document.addEventListener( 'DOMContentLoaded', function() {
-        var splide = new Splide( '.splide', {
-          type   : 'slide', 
-          gap: 20,
-          perPage: 2, 
-
-          breakpoints: {
-            640: {
-              perPage: 2,
-            },
-            480: {
-              perPage: 1,
-            }
-          }
-        } );
-        splide.mount();
-      } );
-    </script>
     
     <div class="container my-2 xl:m-6">
       <div class="text-color-3 font-bold text-[26px] pb-10 xl:text-4xl">РЕЗУЛЬТАТЫ НАШИХ ПАЦИЕНТОВ</div>
 
       <div class="flex flex-col gap-4 xl:flex-row">
-        <div class="hidden gap-4 justify-between lg:flex">
-          <div class="flex flex-col gap-4">
-            <div class="text-grey">До</div>
 
-            <img src="src/images/smile-1.png" alt="Фото до №1" class="rounded-min min-w-[180px] h-[110px] object-cover object-center">
+
+        <div class="splide mb-10 2xl:w-[50%] 2xl:hidden" id="sp2">
+          <div class="splide__track">
+            <div class="splide__list justify-between flex 2xl:!w-full 2xl:!flex 2xl:gap-4 2xl:flex-row">
+
+              <div class="splide__slide 2xl:w-1/3">
+                <div class="flex flex-col gap-4">
+                  <div class="text-grey w-full">До</div>
+
+                  <img src="src/images/smile-1.png" alt="Фото до №1" class="rounded-min w-full h-[110px] object-cover object-center">
+
+                  <div class="text-grey">После</div>
+
+                  <img src="src/images/smile-1.png" alt="Фото после №1" class="rounded-min w-full h-[110px] object-cover object-center">
+
+                  <div class="font-bold">68 лет</div>
+
+                  <div class="text-grey">ALL-ON-4</div>
+                </div>
+              </div>
+              
+              <div class="splide__slide 2xl:w-1/3">
+                <div class="flex flex-col gap-4">
+                  <div class="text-grey lg:invisible">До</div>
+
+                  <img src="src/images/smile-1.png" alt="Фото до №1" class="rounded-min w-full h-[110px] object-cover object-center">
+
+                  <div class="text-grey lg:invisible">После</div>
+
+                  <img src="src/images/smile-1.png" alt="Фото после №1" class="rounded-min w-full h-[110px] object-cover object-center">
+
+                  <div class="font-bold">70 лет</div>
+
+                  <div class="text-grey">ALL-ON-6</div>
+                </div>
+              </div>
+
+              <div class="splide__slide 2xl:w-1/3">
+                <div class="flex flex-col gap-4">
+                  <div class="text-grey lg:invisible">До</div>
+
+                  <img src="src/images/smile-1.png" alt="Фото до №1" class="rounded-min w-full h-[110px] object-cover object-center">
+
+                  <div class="text-grey lg:invisible">После</div>
+
+                  <img src="src/images/smile-1.png" alt="Фото после №1" class="rounded-min w-full h-[110px] object-cover object-center">
+
+                  <div class="font-bold">75 лет</div>
+
+                  <div class="text-grey">Одномоментая имплантация</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden gap-4 2xl:flex">
+          <div class="flex flex-col gap-4">
+            <div class="text-grey w-full">До</div>
+
+            <img src="src/images/smile-1.png" alt="Фото до №1" class="rounded-min w-full h-[110px] object-cover object-center">
 
             <div class="text-grey">После</div>
 
-            <img src="src/images/smile-1.png" alt="Фото после №1" class="rounded-min min-w-[180px] h-[110px] object-cover object-center">
+            <img src="src/images/smile-1.png" alt="Фото после №1" class="rounded-min w-full h-[110px] object-cover object-center">
 
             <div class="font-bold">68 лет</div>
 
             <div class="text-grey">ALL-ON-4</div>
-          </div> 
-          
+          </div>
+
           <div class="flex flex-col gap-4">
-            <div class="text-grey invisible">До</div>
+            <div class="text-grey lg:invisible">До</div>
 
-            <img src="src/images/smile-1.png" alt="Фото до №1" class="rounded-min min-w-[180px] h-[110px] object-cover object-center">
+            <img src="src/images/smile-1.png" alt="Фото до №1" class="rounded-min w-full h-[110px] object-cover object-center">
 
-            <div class="text-grey invisible">После</div>
+            <div class="text-grey lg:invisible">После</div>
 
-            <img src="src/images/smile-1.png" alt="Фото после №1" class="rounded-min min-w-[180px] h-[110px] object-cover object-center">
+            <img src="src/images/smile-1.png" alt="Фото после №1" class="rounded-min w-full h-[110px] object-cover object-center">
 
             <div class="font-bold">70 лет</div>
 
             <div class="text-grey">ALL-ON-6</div>
-          </div> 
+          </div>
 
           <div class="flex flex-col gap-4">
-            <div class="text-grey invisible">До</div>
+            <div class="text-grey lg:invisible">До</div>
 
-            <img src="src/images/smile-1.png" alt="Фото до №1" class="rounded-min min-w-[180px] h-[110px] object-cover object-center">
+            <img src="src/images/smile-1.png" alt="Фото до №1" class="rounded-min w-full h-[110px] object-cover object-center">
 
-            <div class="text-grey invisible">После</div>
+            <div class="text-grey lg:invisible">После</div>
 
-            <img src="src/images/smile-1.png" alt="Фото после №1" class="rounded-min min-w-[180px] h-[110px] object-cover object-center">
+            <img src="src/images/smile-1.png" alt="Фото после №1" class="rounded-min w-full h-[110px] object-cover object-center">
 
             <div class="font-bold">75 лет</div>
 
             <div class="text-grey">Одномоментая имплантация</div>
-          </div> 
+          </div>
         </div>
 
-        <div class="flex flex-col gap-4 2xl:flex-row">
+        <div class="flex flex-col gap-4 2xl:flex-row 2xl:w-[50%]">
           <div class="flex flex-col gap-4 justify-center bg-[#15182B] rounded-min p-4 2xl:w-1/2">
 
             <div class="flex gap-4 items-center">
@@ -561,7 +753,7 @@
     <div class="container overflow-hidden my-2 xl:m-6">
       <div class="flex flex-col gap-4 2xl:flex-row">  
         <div class="flex flex-col gap-8 xl:flex-row xl:gap-4 xl:w-full 2xl:w-1/2">
-          <div class="flex flex-col gap-8 xl:w-1/2">
+          <div class="flex flex-col gap-8 mt-6 xl:w-1/2">
             <div class="text-color-3 font-bold">
               <div class="text-2xl">ВСЕГО ЗА</div>
               <div class="text-[42px]">1 ДЕНЬ</div>
@@ -706,7 +898,7 @@
             </div>
           </div>
 
-          <button class="text-xs border border-[#FFFFFF99] rounded-[12px] py-2 px-6 xl:px-10">ПЕРЕЗВОНИТЕ МНЕ</button>
+          <button class="text-xs border border-[#FFFFFF99] rounded-[12px] py-2 px-6 xl:px-10" data-modal="modal-call">ПЕРЕЗВОНИТЕ МНЕ</button>
         </div>
       </div>   
 
@@ -728,10 +920,12 @@
     <!-- End footer -->
 
     <!-- Start modal call -->
-    <div id="modal-call" style="display: none;" >
-        <h2 class="font-medium text-[20px] max-w-[300px] mx-auto text-center leading-6 mb-4 sm:text-[24px] sm:leading-8 md:text-[28px] md:max-w-[600px]">Рассчитайте стоимость лечения за 1 минуту</h2>
+    <div id="modal-call" style="display: none;">
+        <h2 class="font-medium text-[20px] max-w-[300px] mx-auto text-center leading-6 mb-4 text-[#E0E8F0] sm:text-[24px] sm:leading-8 md:text-[28px] md:max-w-[600px]">Рассчитайте стоимость лечения за 1 минуту</h2>
 
-        <img class="relative top-12" src="/src/images/phone-bg.webp" alt="phone-bg">
+        <div class="text-[#A0B4C4] text-center text-[18px]">
+          Оставьте заявку, и наш менеджер свяжется с вами в течение 25 секунд
+        </div>
 
         <form action="#" method="POST" class="max-w-[500px] mx-auto rounded-[16px] overflow-hidden">
 
@@ -754,9 +948,7 @@
 
             </div>
 
-            <div class="bg-[#FFDA57] relative z-10 p-4 flex flex-col gap-4">
-                <div class="text-[18px]">Введите номер, на который отправить расчёт, и закрепите за собой бесплатный 3D-снимок</div>
-
+            <div class="bg-transparent relative z-10 p-4 flex flex-col gap-4">
                 <div class="w-full border rounded-2xl p-3 text-[22px] flex items-center gap-2 bg-white overflow-hidden">
                     <svg class="min-w-6" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M16.0265 12.7161L13.9098 12.4745C13.6609 12.4452 13.4087 12.4728 13.172 12.5551C12.9353 12.6373 12.7203 12.7722 12.5432 12.9495L11.0098 14.4828C8.64433 13.2794 6.72155 11.3567 5.51817 8.99115L7.05983 7.44948C7.41817 7.09115 7.59317 6.59115 7.53483 6.08281L7.29317 3.98281C7.2461 3.57622 7.05105 3.20117 6.74522 2.92914C6.43938 2.65712 6.04414 2.50715 5.63483 2.50781H4.19317C3.2515 2.50781 2.46817 3.29115 2.5265 4.23281C2.96817 11.3495 8.65983 17.0328 15.7682 17.4745C16.7098 17.5328 17.4932 16.7495 17.4932 15.8078V14.3661C17.5015 13.5245 16.8682 12.8161 16.0265 12.7161Z" fill="#191A22"></path>
@@ -764,7 +956,7 @@
                     <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" class="focus:outline-none max-w-[calc(100%_-_40px)]" data-mask-phone>
                 </div>
 
-                <button type="submit" class="2xl:max-w-full hover:bg-[#536df8] bg-[#768BF8] transition-colors p-3 rounded-2xl w-full font-bold mr-auto cursor-pointer">Оставить заявку</button>
+                <button type="submit" class="2xl:max-w-full hover:bg-[#7C3AED] bg-[#6343D8] transition-colors p-3 rounded-2xl w-full font-bold mr-auto text-white cursor-pointer">Оставить заявку</button>
             </div>
 
         </form>

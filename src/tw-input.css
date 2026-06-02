@@ -13,6 +13,14 @@
             padding-inline: 20px;
         }
     }
+
+    .splide__pagination__page {
+        @apply !bg-transparent !border-1 !border-[white] !w-4 !h-4;
+    }
+
+    .splide__pagination {
+        @apply !-bottom-8 !gap-1;
+    }
 }
 
 @theme {
@@ -24,7 +32,6 @@
     --color-color-5: #5448AB;
     --color-color-6: #11132A;
     --color-color-7: #110F24;
-
     --radius-min: 8px;
 }
 
