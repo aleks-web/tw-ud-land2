@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener( 'DOMContentLoaded', function() {
-    console.log(document.querySelector('.splide'));
     new Splide( '#sp', {
         type: 'slide',
         gap: 20,
