@@ -6,14 +6,9 @@ import '@splidejs/splide/css/core';
 
 import "./core/core.js";
 import "./quiz.js";
+import "./events.js";
 import Splide from '@splidejs/splide';
 
-
-document.addEventListener('DOMContentLoaded', () => {
-    document.addEventListener('fetchLeadSuccess', (e) => {
-        window.location = '/success.html';
-    });
-});
 
 document.addEventListener( 'DOMContentLoaded', function() {
     new Splide( '#sp', {
