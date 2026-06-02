@@ -6,7 +6,7 @@ export default {
             'md': '480px',
             'lg': '640px',
             'xl': '920px',
-            '2xl': '1194px'
+            '2xl': '1294px'
         }
     }
 };
