@@ -1,6 +1,7 @@
 import "./customEvents.js";
 import "./utils.js";
 import "./politic.js";
+import "./goto.js";
 import "./agree.js";
 import "./forms.js";
 import "./modals.js";

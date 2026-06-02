@@ -1,0 +1,41 @@
+.dev-helper {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    &__btn {
+        padding: 5px 10px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: blueviolet;
+        font-size: 14px;
+        cursor: pointer;
+        transform: translateY(2px);
+        transition: .2s all;
+
+        &:hover {
+            transform: translateX(0);
+        }
+    }
+
+    &__btn-tw {
+        color: white;
+    }
+
+    &__btn-quiz {
+        background-color: orange;
+        display: none;
+
+        @media (min-width: 576px) {
+            display: flex;
+        }
+    }
+}
