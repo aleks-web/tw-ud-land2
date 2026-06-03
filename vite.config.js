@@ -3,13 +3,12 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
     base: './',
-    plugins: [
-        tailwindcss(),
-    ],
+    plugins: [ tailwindcss() ],
     build: {
         rollupOptions: {
             input: {
-                main: 'index.html'
+                main: 'index.html',
+                success: 'success.html'
             }
         }
     }
